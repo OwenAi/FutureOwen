@@ -1,2 +1,4 @@
 # ignore list
-.metadata/
+
+/.metadata/
+
