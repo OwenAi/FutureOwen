@@ -9,8 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 		TaskManager taskManager = new TaskManager();
 		Scanner scnr = new Scanner(System.in);
+		boolean list = true;
 		
-		while(true) {
+		while(list == true) {
 			// Display menu
 			System.out.println("Task Management Application");
 			System.out.println("1. Add a task");
@@ -18,7 +19,7 @@ public class Main {
 			System.out.println("3. View all tasks");
 			System.out.println("4. Delete a task");
 			System.out.println("5. Mark a task as completed");
-			System.out.println("6. Exit");
+			System.out.println("0. Exit");
 			
 			System.out.println("Enter your choice: ");
 			
@@ -111,9 +112,9 @@ public class Main {
 				}
 				taskManager.markTaskAsCompleted(completeIndex -1);
 				System.out.println("Task marked as completed successfuly.");
-				break;
-				default:
-					System.out.println("Invalid choice. Pleas try again.");
+				break;			
+			default:
+				System.out.println("Invalid choice. Pleas try again.");
 			}
 			
 			System.out.println();
