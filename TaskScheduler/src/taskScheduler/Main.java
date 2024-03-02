@@ -9,9 +9,8 @@ public class Main {
 	public static void main(String[] args) {
 		TaskManager taskManager = new TaskManager();
 		Scanner scnr = new Scanner(System.in);
-		boolean list = true;
 		
-		while(list == true) {
+		while(true) {
 			// Display menu
 			System.out.println("Task Management Application");
 			System.out.println("1. Add a task");
