@@ -2,6 +2,7 @@ package taskScheduler;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -48,6 +49,14 @@ public class Main {
 							System.out.println("Invalid date format. Please try again.");
 					}
 				}
+				int year = 0;
+				while (year == 0)
+					System.out.print("Enter a random year: ");
+					try {
+						int randomYear = scnr.nextInt();
+					} catch (InputMismatchException d) {
+						System.out.println("Invalid year. Please try again.");
+					}
 				taskManager.addTask(title,  description,  dueDate);
 				System.out.println("Task added successfully.");
 				break;
