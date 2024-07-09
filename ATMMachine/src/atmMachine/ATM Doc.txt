@@ -1,0 +1,60 @@
+atmMachineSudoCode
+
+
+Goal: Produce a working ATM with:
+	Sign in
+	Account types
+	Account deposit/withdrawl
+	Exit
+	
+This will work with 3 different classes:
+	ATM (Main)
+	Account (Data and Manipulation)
+	Option Menu (User Interface)
+	
+ATM: Start the Option Menu
+
+Account: Data and Manipulation
+	Setters and getters for 
+		Account Number
+		Pin Number
+		Checking Balance
+		Savings Balance
+	Process for:
+		Deposit:
+			Checking
+			Savings
+		Withdrawal:
+			Checking
+			Savings
+
+Option Menu:
+	Open Scanner
+	Set Money Format
+	Create Hashmap for customer data storage
+	
+	Request customer account and pin
+		Enter Valid customer account and pin (account, pin)
+		if valid, grant access
+		if invalid, deny access
+		
+	if valid:
+		Ask what type of account
+			Checking
+			Savings
+			Exit
+			prevent error
+		Ask for type of process for Checking
+			view - view Checking balance
+			withdrawal - subtract from Checking
+			deposit - add to Checking
+			exit
+			prevent error
+		Ask for type of process for Savings
+			view - view Savings balance
+			withdrawal - subtract from Savings
+			deposit - add to Savings
+			exit
+			prevent error
+		
+		
